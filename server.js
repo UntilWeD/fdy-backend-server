@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-const dbUrl = 'mongodb+srv://YOUR_ID:PASSWORD@cluster0.YOURS.mongodb.net/';
+const dbUrl = 'mongodb+srv://muojeso90:asd123@cluster0.24htalb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
@@ -65,8 +65,9 @@ app.get('/naver-shopping', async (req, res) => {
     return;
   }
 
-	const clientId = 'YOUR_CLIENT_ID';
-  const clientSecret = 'YOUR_CLIENT_SECRET';
+// 자신의 것으로 후에 수정
+	const clientId = 'BJP0zsk5iupEeuKLQ83p';
+  const clientSecret = 'XBQ4ztVwXp';
   const displayPerPage = 100; 
   const maxResults = 1000; 
 
