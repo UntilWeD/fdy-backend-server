@@ -78,7 +78,7 @@ app.get('/naver-shopping', async (req, res) => {
       const allResults = [];
 
       while (start <= maxResults) { 
-        const apiUrl = `/v1/search/shop.json?query=${encodeURIComponent(flowername)}&display=${displayPerPage}&start=${start}&sort=sim`;
+        const apiUrl = `https://openapi.naver.com/v1/search/shop.json?query=${encodeURIComponent(flowername)}&display=${displayPerPage}&start=${start}&sort=sim`;
       
         const response = await axios.get(apiUrl, {
           headers: {
